@@ -114,9 +114,8 @@ Run the tests:
 python -m unittest Tests_Qubit_State_Prep.py
 ```
 To make these tests fail manually, comment and uncomment as follows:
-* Comment ```self.psi = (self.amplitudes / norm).reshape((self.dim, 1))``` in method ```prepare(...)``` of ```State_Preparation``` class.
-* Uncomment ```self.psi = self.amplitudes.reshape((self.dim, 1))``` to break for normalization test.
-* Uncomment ```self.psi = (self.amplitudes / norm)``` to break for dimensionality test.
+1. Comment ```self.psi = (self.amplitudes / norm).reshape((self.dim, 1))``` in method ```prepare(...)``` of ```State_Preparation``` class.
+2. Uncomment ```self.psi = self.amplitudes.reshape((self.dim, 1))``` to break for normalization test **OR** uncomment ```self.psi = (self.amplitudes / norm)``` to break for dimensionality test.
 
 ## Contributing
 
