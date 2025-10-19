@@ -33,7 +33,7 @@ pip install numpy
 ```
 No packaging needed — the module is single-file and importable.
 
-## Usage examples
+## Quick Start
 
 Programmatic usage:
 
