@@ -16,7 +16,7 @@ It has a ```State_Preparation``` class which helps construct a 2^n-dimensional s
 
 ## Files
 
-* ```Qubit_State_Prep.py``` — implementation of State_Preparation.
+* ```Qubit_State_Prep.py``` — implementation of ```State_Preparation```.
 * ```Tests_Qubit_State_Prep.py``` — unit tests covering normalization, shape and error handling.
 
 ## Pre-requisites
