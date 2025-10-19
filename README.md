@@ -131,3 +131,6 @@ When opening PRs, please include:
 * Unit tests for new behavior.
 * Short explanation of why the change is required.
 * If behavior changes (backwards-incompatible), bump a version or document a migration.
+
+
+Feel free to drop an email at [aditi.das1601@gmail.com] to chat with me!
