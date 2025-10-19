@@ -103,10 +103,10 @@ print(qs.dirac_notation())
 
 ```Tests_Qubit_State_Prep.py``` contains unittest-based tests that verify:
 
-* test_normalization_enforced: prepare() returns a normalized state (sum of |ψ|^2 == 1).
-* test_correct_dimension: returned shape is (2^n, 1).
-* test_invalid_number_of_amplitudes: wrong-size amplitude list raises ValueError.
-* test_zero_amplitudes: all-zero amplitudes raise ValueError.
+* ```test_normalization_enforced```: prepare() returns a normalized state (sum of |ψ|^2 == 1).
+* ```test_correct_dimension```: returned shape is (2^n, 1).
+* ```test_invalid_number_of_amplitudes```: wrong-size amplitude list raises ValueError.
+* ```test_zero_amplitudes```: all-zero amplitudes raise ValueError.
 
 Run the tests:
 ```
