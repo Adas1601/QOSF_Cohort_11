@@ -1,6 +1,6 @@
 # n Dimensional Qubit State Preparation — README
 
-A small utility to prepare, display and validate normalized quantum state vectors (kets)
+A small utility to prepare, display and validate normalized quantum state vectors (kets).
 
 This repository contains a compact Python implementation to create, display and test normalized quantum states for n qubits.
 It has a State_Preparation class helps construct a 2^n-dimensional state vector for n qubits from a list of complex amplitudes and shows the state both as a column vector and in Dirac (ket) notation. It also includes a test suite demonstrating the intended correctness checks (normalization, correct dimensionality, and error cases).
@@ -16,8 +16,8 @@ It has a State_Preparation class helps construct a 2^n-dimensional state vector 
 
 ## Files
 
-* Qubit_State_Prep.py — implementation of State_Preparation.
-* Tests_Qubit_State_Prep.py — unit tests covering normalization, shape and error handling.
+* ```Qubit_State_Prep.py``` — implementation of State_Preparation.
+* ```Tests_Qubit_State_Prep.py``` — unit tests covering normalization, shape and error handling.
 
 ## Pre-requisites
 * Python 3.8+ (works on 3.8, 3.9, 3.10, 3.11)
@@ -63,7 +63,6 @@ Example interactive input for 1 qubit:
 Enter number of qubits: 2
 Enter 2 complex amplitudes (space-separated, e.g. 1+0j 0):
 1 1 1j 0
-
 ```
 
 ## Usage examples
@@ -88,9 +87,9 @@ Normalized 2-qubit state vector (column form):
  [0.70710678+0.j]]
 
 State in Dirac notation:
-|ψ⟩ = (0.707+0.000j)|00⟩ + (0.707+0.000j)|11⟩
+|ψ⟩ = (0.707)|00⟩ + (0.707)|11⟩
 
-Normalization check: 1.0
+Normalization check: 0.9999999999999998
 ```
 Example 2: Using complex amplitudes
 
@@ -99,5 +98,36 @@ amps = [0.6+0.8j, 0, 0, 0]   # single nonzero complex amplitude
 qs = State_Preparation(2, amps)
 qs.prepare()
 print(qs.dirac_notation())
-
 ```
+## Tests
+
+```Tests_Qubit_State_Prep.py``` contains unittest-based tests that verify:
+
+* test_normalization_enforced: prepare() returns a normalized state (sum of |ψ|^2 == 1).
+* test_correct_dimension: returned shape is (2^n, 1).
+* test_invalid_number_of_amplitudes: wrong-size amplitude list raises ValueError.
+* test_zero_amplitudes: all-zero amplitudes raise ValueError.
+
+Run the tests:
+```
+python -m unittest Tests_Qubit_State_Prep.py
+```
+To make these tests fail manually, comment and uncomment as follows:
+* Comment ```self.psi = (self.amplitudes / norm).reshape((self.dim, 1))``` in method ```prepare(...)``` of ```State_Preparation``` class.
+* Uncomment ```self.psi = self.amplitudes.reshape((self.dim, 1))``` to break for normalization test.
+* Uncomment ```self.psi = (self.amplitudes / norm)``` to break for dimensionality test.
+
+## Contributing
+
+To people who want to contribute, it is quite welcome! Suggested workflow:
+
+1. Fork the repository.
+2. Create a feature branch: ```git checkout -b fix/normalization``` or ```git checkout -b feat/cli-input-file```.
+3. Make your changes; run tests: python -m unittest.
+4. Submit a pull request describing your change and referencing this README.
+
+When opening PRs, please include:
+
+* Unit tests for new behavior.
+* Short explanation of why the change is required.
+* If behavior changes (backwards-incompatible), bump a version or document a migration.
