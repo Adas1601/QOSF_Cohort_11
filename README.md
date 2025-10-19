@@ -9,9 +9,9 @@ It has a State_Preparation class helps construct a 2^n-dimensional state vector 
 * Accepts complex amplitudes for 2^n basis states and arranges them into a column vector.
 * Displays the state vector and a human-friendly Dirac (ket) representation (e.g. (0.707+0.000j)|00⟩ + (0.707+0.000j)|01⟩ ...).
 * Validation checks:
-** Ensures the number of amplitudes equals 2^n.
-** Ensures not all amplitudes are zero.
-** Also ensures normalization
+  * Ensures the number of amplitudes equals 2^n.
+  * Ensures not all amplitudes are zero.
+  * Also ensures normalization
 * Included unit tests that assert normalization, dimensionality and error conditions.
 
 ## Files
