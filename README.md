@@ -58,7 +58,7 @@ You will be prompted for:
 * Number of qubits (integer)
 * Space-separated complex amplitudes (e.g. 1+0j 0 1j 0)
 
-Example interactive input for 1 qubit:
+Example interactive input for 2 qubits:
 
 ```
 Enter number of qubits: 2
