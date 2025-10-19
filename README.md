@@ -133,4 +133,4 @@ When opening PRs, please include:
 * If behavior changes (backwards-incompatible), bump a version or document a migration.
 
 
-Feel free to drop an email at [aditi.das1601@gmail.com] to chat with me!
+Feel free to drop an email at [my mail ID](aditi.das1601@gmail.com) to chat with me!
