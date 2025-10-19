@@ -7,5 +7,5 @@ It exposes a State_Preparation class for programmatic use and a simple CLI for m
 
 Files
 
--Qubit_State_Prep.py — implementation of State_Preparation.
--Tests_Qubit_State_Prep.py — unit tests covering normalization, shape and error handling.
+* Qubit_State_Prep.py — implementation of State_Preparation.
+* Tests_Qubit_State_Prep.py — unit tests covering normalization, shape and error handling.
