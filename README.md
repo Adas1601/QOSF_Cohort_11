@@ -21,4 +21,4 @@ It has a State_Preparation class helps construct a 2^n-dimensional state vector 
 
 ## Pre-requisites
 * Python 3.8+ (works on 3.8, 3.9, 3.10, 3.11)
-* NumPy — used for numeric arrays and normalization: install using ''' pip install numpy '''
+* NumPy — used for numeric arrays and normalization: install using ``` pip install numpy ```
