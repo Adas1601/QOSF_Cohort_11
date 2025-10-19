@@ -11,7 +11,7 @@ It has a State_Preparation class helps construct a 2^n-dimensional state vector 
 * Validation checks:
   * Ensures the number of amplitudes equals 2^n.
   * Ensures not all amplitudes are zero.
-  * Also ensures normalization
+  * Also ensures normalization.
 * Included unit tests that assert normalization, dimensionality and error conditions.
 
 ## Files
@@ -21,4 +21,4 @@ It has a State_Preparation class helps construct a 2^n-dimensional state vector 
 
 ## Pre-requisites
 * Python 3.8+ (works on 3.8, 3.9, 3.10, 3.11)
-* NumPy — used for numeric arrays and normalization: install using pip install numpy
+* NumPy — used for numeric arrays and normalization: install using '''pip install numpy
