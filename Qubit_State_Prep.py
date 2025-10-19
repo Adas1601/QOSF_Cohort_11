@@ -19,7 +19,7 @@ class State_Preparation:
         if norm == 0:
             raise ValueError("Amplitudes cannot all be zero.")
         
-        self.psi = (self.amplitudes / norm).reshape((self.dim, 1))
+        self.psi = (self.amplitudes / norm).reshape((self.dim, 1))# Comment this out to make tests fail
         #self.psi = self.amplitudes.reshape((self.dim, 1)) # remove norm to break for normalization test
         #self.psi = (self.amplitudes / norm)  # remove reshape to break for dimensionality test
         return self.psi
