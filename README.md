@@ -3,7 +3,7 @@
 A small utility to prepare, display and validate normalized quantum state vectors (kets).
 
 This repository contains a compact Python implementation to create, display and test normalized quantum states for n qubits.
-It has a State_Preparation class helps construct a 2^n-dimensional state vector for n qubits from a list of complex amplitudes and shows the state both as a column vector and in Dirac (ket) notation. It also includes a test suite demonstrating the intended correctness checks (normalization, correct dimensionality, and error cases).
+It has a ```State_Preparation``` class which helps construct a 2^n-dimensional state vector for n qubits from a list of complex amplitudes and shows the state both as a column vector and in Dirac (ket) notation. It also includes a test suite demonstrating the intended correctness checks (normalization, correct dimensionality, and error cases).
 
 ## Features
 * Accepts complex amplitudes for 2^n basis states and arranges them into a column vector.
@@ -21,7 +21,7 @@ It has a State_Preparation class helps construct a 2^n-dimensional state vector 
 
 ## Pre-requisites
 * Python 3.8+ (works on 3.8, 3.9, 3.10, 3.11)
-* NumPy — used for numeric arrays and normalization: install using ``` pip install numpy ```
+* NumPy — used for numeric arrays and normalization: install using ``` pip install numpy ```.
 
 ## Installation
 
@@ -36,6 +36,7 @@ No packaging needed — the module is single-file and importable.
 ## Usage examples
 
 Programmatic usage:
+
 ```
 from Qubit_State_Prep import State_Preparation
 
